@@ -10,7 +10,7 @@ h1 {
   flex-direction: column;
   margin: 1vw;
   font-family: "neon", sans-serif;
-  font-size: 22vw;
+  font-size: 25vw;
   color: #ffffff;
   text-shadow:
           0 0 42px #d014be;
@@ -63,21 +63,26 @@ h1 {
 #partie1 {
   padding-top: 10vw;
   padding-bottom: 25vw;
-  background-image: url("/img/neonRoseN.jpg");
+  background-image: url("/img/fondNeon2.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
 #partie2{
-  background-image: url("/img/test.jpg");
+  background-image:  url("/img/fondNeon.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
-  height: 120vw;
+  height: 80vw;
+
 
 }
 
+#photoAdam{
+  background-image: url("/img/neonRoseN.jpg");
+  background-size: cover; /* L'image couvre toute la surface de la zone */
+}
+
 #photoAdam img{
-  width: 100%;
-  height: 30%;
+  width: 100vw;
 
   box-shadow: 0 0 2vw #d014be;
 }
@@ -121,7 +126,7 @@ h1 {
   margin-bottom: 3rem;
 }
 .elementDecompte{
-  margin-right: 7vw;
+  margin-right: 6vw;
   width: 70px; /* Largeur fixe pour une taille uniforme */
   height: 70px; /* Hauteur fixe pour une taille uniforme */
   align-items: center;
@@ -144,19 +149,18 @@ h1 {
   font-family: DMSerif, sans-serif;
   font-size: 1rem;
   color: #ffffff;
-  text-shadow:
-          0 0 42px #cc14bc;
+  text-shadow: 0 0 7px #00fda9;
 
 }
-.chiffreDecompte{
+.chiffreDecompte {
   color: #ffffff;
-  font-family: DMSerif,sans-serif;
+  font-family: DMSerif, sans-serif;
   font-size: 16vw;
   align-items: center;
   justify-content: center;
   display: flex;
-  text-shadow:
-          0 0 42px #ce14bd;}
+  text-shadow: 0 0 7px #00fda9;
+}
 
 
 @keyframes pulsate {
