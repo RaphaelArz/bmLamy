@@ -67,7 +67,7 @@ h1 {
   background-size: cover; /* L'image couvre toute la surface de la zone */
 }
 #partie2{
-  background-image: url("/img/neonRoseH.jpg");
+  background-image: url("/img/bleuRose.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
   height: 120vw;
@@ -76,7 +76,8 @@ h1 {
 
 #photoAdam img{
   width: 100%;
-  height: 70%;
+  height: 30%;
+
   box-shadow: 0 0 2vw #d014be;
 }
 
@@ -124,7 +125,7 @@ h1 {
   margin-bottom: 3rem;
 }
 .elementDecompte{
-  margin-right: 1rem;
+  margin-right: 7vw;
   width: 70px; /* Largeur fixe pour une taille uniforme */
   height: 70px; /* Hauteur fixe pour une taille uniforme */
   align-items: center;
@@ -150,12 +151,12 @@ h1 {
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px #d014be,
-    0 0 42px #d014be,
-    0 0 82px #d014be,
-    0 0 92px #d014be,
-    0 0 102px #d014be,
-    0 0 151px #d014be;
+    0 0 21px #00ffaa,
+    0 0 42px #00ffaa,
+    0 0 82px #00ffaa,
+    0 0 92px #00ffaa,
+    0 0 102px #00ffaa,
+    0 0 151px #00ffaa;
 }
 .chiffreDecompte{
   color: #ffffff;
@@ -167,12 +168,12 @@ h1 {
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px #d014be,
-    0 0 42px #d014be,
-    0 0 82px #d014be,
-    0 0 92px #d014be,
-    0 0 102px #d014be,
-    0 0 151px #d014be;
+    0 0 21px #00ffaa,
+    0 0 42px #00ffaa,
+    0 0 82px #00ffaa,
+    0 0 92px #00ffaa,
+    0 0 102px #00ffaa,
+    0 0 151px #00ffaa;
 }
 
 
@@ -214,6 +215,15 @@ h1 {
   text-decoration: none;
   background-color: transparent;
   transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
+  text-shadow:
+          0 0 4px #fff,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
   box-shadow:
     0 0 2px #fff,
     0 0 4px #fff,
