@@ -10,7 +10,7 @@ h1 {
   flex-direction: column;
   margin: 1vw;
   font-family: "neon", sans-serif;
-  font-size: 25vw;
+  font-size: 20vw;
   color: #ffffff;
   text-shadow:
           0 0 42px #d014be;
@@ -77,6 +77,7 @@ h1 {
 }
 
 #photoAdam{
+
   background-image: url("/img/neonRoseN.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 }
@@ -85,6 +86,14 @@ h1 {
   width: 100vw;
 
   box-shadow: 0 0 2vw #d014be;
+}
+
+#tephiline{
+  padding-top: 25vw;
+  padding-bottom: 25vw;
+  background-image: url("/img/fondNeon2.jpg");
+  background-size: cover; /* L'image couvre toute la surface de la zone */
+
 }
 
 #gpName {
@@ -197,28 +206,14 @@ h1 {
   color: #ffffff;
   border-radius: 0.2rem;
   margin: 2.2rem;
-  border: 2px solid #d014be; /* Ajoute une bordure blanche de 2 pixels */
+  border: 2px solid #00ffaa; /* Ajoute une bordure blanche de 2 pixels */
   text-decoration: none;
   background-color: transparent;
   transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
-  text-shadow:
-          0 0 4px #fff,
-          0 0 11px #fff,
-          0 0 19px #fff,
-          0 0 40px #0fa,
-          0 0 80px #0fa,
-          0 0 90px #0fa,
-          0 0 100px #0fa,
-          0 0 150px #0fa;
-  box-shadow:
-    0 0 2px #fff,
-    0 0 4px #fff,
-    0 0 6px #fff,
-    0 0 0 #d014be,
-    0 0 0px #d014be,
-    0 0 55px #d014be,
-    0 0 70px #d014be,
-    0 0 80px #d014be;
+  text-shadow:    0 0 55px #00ffaa;
+  box-shadow:    0 0 55px #00ffaa;
+
+
 }
 
 .btnLink:hover {
