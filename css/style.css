@@ -20,14 +20,16 @@ h1 {
   color: white;
   font-family: cormorand, sans-serif;
   font-size: 5.5vw;
-  text-shadow: 0 0 7px #0fa;
+  text-shadow: 0 0 7px #0fa,
+  0 0 55px #0fa;
 }
 
 .txtDroitGras {
   font-family: cormorand, sans-serif;
   font-style: italic;
   font-weight: 1000;  /* ou 'bold' */
-  text-shadow: 0 0 7px #0fa;
+  text-shadow: 0 0 7px #0fa,
+  0 0 55px #0fa;
   font-size: 9vw;
   color: #ffffff;
 }
@@ -36,8 +38,11 @@ h1 {
     color: white;
     font-family: Amsterdam, sans-serif;
     font-size: 6.5vw;
-    text-shadow: 0 0 7px #0fa;
-  }
+    text-shadow: 0 0 7px #0fa,
+    0 0 55px #0fa;
+
+
+}
 
 .txtItalicGros {
   font-family: Amsterdam, sans-serif;
@@ -45,7 +50,9 @@ h1 {
   font-style: italic;
   font-size: 10vw;
   color: #ffffff;
-  text-shadow: 0 0 7px #00fda9;
+  text-shadow: 0 0 7px #00fda9,
+  0 0 55px #0fa;
+;
 }
 
 .partie {
@@ -89,7 +96,7 @@ h1 {
 }
 
 #tephiline{
-  padding-top: 25vw;
+  padding-top: 30vw;
   padding-bottom: 25vw;
   background-image: url("/img/fondNeon2.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
