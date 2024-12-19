@@ -40,7 +40,7 @@ h1 {
 .txtItalic {
     color: white;
     font-family: Amsterdam, sans-serif;
-    font-size: 5.5vw;
+    font-size: 5.8vw;
     text-shadow: 0 0 7px #0fa;
   }
 
@@ -70,18 +70,10 @@ h1 {
   padding-bottom: 25vw;
   background-image: url("/img/neonRoseN.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
-  box-shadow:
-          0 0 4px #ff0000,
-          0 0 11px #fff,
-          0 0 19px #fff,
-          0 0 40px #0fa,
-          0 0 80px #0fa,
-          0 0 90px #0fa,
-          0 0 100px #0fa,
-          0 0 150px #0fa;
+
 }
 #partie2{
-  background-image: url("/img/bleuRose.jpg");
+  background-image: url("/img/test.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
   height: 120vw;
@@ -107,13 +99,13 @@ h1 {
 
 #gpLeft {
   text-align: left;
-  font-family: cormorand sans-serif;
+  font-family: cormorand, sans-serif;
 
 }
 
 #gpRight {
   text-align: right;
-  font-family: cormorand sans-serif;
+  font-family: cormorand, sans-serif;
 
 }
 
@@ -173,11 +165,8 @@ h1 {
   justify-content: center;
   display: flex;
   text-shadow:
-          0 0 42px #00ffaa,
-          0 0 82px #00ffaa,
-          0 0 92px #00ffaa,
-          0 0 102px #00ffaa,
-          0 0 151px #00ffaa;
+          0 0 42px #ce14bd,
+          0 0 82px #ce14bd;
 }
 
 
