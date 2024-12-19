@@ -61,7 +61,7 @@ h1 {
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
 }
 #partie1 {
-  padding-top: 25vw;
+  padding-top: 5vw;
   padding-bottom: 25vw;
   background-image: url("/img/neonRoseN.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
