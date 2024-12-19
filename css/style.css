@@ -12,8 +12,8 @@ h1 {
   font-family: "neon", sans-serif;
   font-size: 20vw;
   color: #ffffff;
-  text-shadow:
-          0 0 42px #d014be;
+  text-shadow: 0 0 7px #0fa,
+  0 0 55px #0fa;
 }
 
 .txtDroit {
@@ -65,17 +65,18 @@ h1 {
   background-position: center; /* Centre l'image */
   font-size: 4.5vw;
   color: white;
+  box-shadow: 0 0 2px #00ffaa;
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
 }
 #partie1 {
   padding-top: 10vw;
   padding-bottom: 25vw;
-  background-image: url("/img/fondNeon2.jpg");
+  background-image: url("/img/cielEtoile.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
 #partie2{
-  background-image:  url("/img/fondNeon.jpg");
+  background-image:  url("/img/cielEtoile.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
   height: 80vw;
@@ -85,20 +86,19 @@ h1 {
 
 #photoAdam{
 
-  background-image: url("/img/neonRoseN.jpg");
+  background-image: url("/img/teteAdam.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 }
 
 #photoAdam img{
   width: 100vw;
 
-  box-shadow: 0 0 2vw #d014be;
 }
 
 #tephiline{
   padding-top: 30vw;
   padding-bottom: 25vw;
-  background-image: url("/img/fondNeon2.jpg");
+  background-image: url("/img/cielEtoile.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
