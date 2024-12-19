@@ -13,14 +13,12 @@ h1 {
   font-size: 22vw;
   color: #ffffff;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #d014be,
-    0 0 82px #d014be,
-    0 0 92px #d014be,
-    0 0 102px #d014be,
-    0 0 151px #d014be;
+          0 0 42px #d014be,
+          0 0 82px #d014be,
+          0 0 92px #d014be,
+          0 0 102px #d014be,
+          0 0 151px #d014be;
+
 }
 
 .txtDroit {
@@ -33,7 +31,8 @@ h1 {
 .txtDroitGras {
   font-family: cormorand, sans-serif;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 1000;  /* ou 'bold' */
+  text-shadow: 0 0 7px #0fa;
   font-size: 9vw;
   color: #ffffff;
 }
@@ -51,7 +50,7 @@ h1 {
   font-style: italic;
   font-size: 10vw;
   color: #ffffff;
-  text-shadow: 0 0 7px #d014be;
+  text-shadow: 0 0 7px #00fda9;
 }
 
 .partie {
@@ -67,10 +66,19 @@ h1 {
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
 }
 #partie1 {
-  padding-top: 5vw;
+  padding-top: 10vw;
   padding-bottom: 25vw;
   background-image: url("/img/neonRoseN.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
+  box-shadow:
+          0 0 4px #ff0000,
+          0 0 11px #fff,
+          0 0 19px #fff,
+          0 0 40px #0fa,
+          0 0 80px #0fa,
+          0 0 90px #0fa,
+          0 0 100px #0fa,
+          0 0 150px #0fa;
 }
 #partie2{
   background-image: url("/img/bleuRose.jpg");
@@ -88,33 +96,24 @@ h1 {
 }
 
 #gpName {
-  font-size: 4vw;
+  font-size: 4.5vw;
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 8vw;
   margin-bottom: 1rem;
   color: #ffffff;
-  text-shadow:
-    0 0 4px #fff,
-    0 0 11px #fff,
-    0 0 19px #fff,
-    0 0 40px #0fa,
-    0 0 80px #0fa,
-    0 0 90px #0fa,
-    0 0 100px #0fa,
-    0 0 150px #0fa;
 }
 
 #gpLeft {
   text-align: left;
-  font-family: Amsterdam ,sans-serif;
+  font-family: cormorand sans-serif;
 
 }
 
 #gpRight {
   text-align: right;
-  font-family: Amsterdam ,sans-serif;
+  font-family: cormorand sans-serif;
 
 }
 
@@ -159,14 +158,12 @@ h1 {
   font-size: 1rem;
   color: #ffffff;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #00ffaa,
-    0 0 42px #00ffaa,
-    0 0 82px #00ffaa,
-    0 0 92px #00ffaa,
-    0 0 102px #00ffaa,
-    0 0 151px #00ffaa;
+          0 0 42px #00ffaa,
+          0 0 82px #00ffaa,
+          0 0 92px #00ffaa,
+          0 0 102px #00ffaa,
+          0 0 151px #00ffaa;
+
 }
 .chiffreDecompte{
   color: #ffffff;
@@ -176,14 +173,11 @@ h1 {
   justify-content: center;
   display: flex;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #00ffaa,
-    0 0 42px #00ffaa,
-    0 0 82px #00ffaa,
-    0 0 92px #00ffaa,
-    0 0 102px #00ffaa,
-    0 0 151px #00ffaa;
+          0 0 42px #00ffaa,
+          0 0 82px #00ffaa,
+          0 0 92px #00ffaa,
+          0 0 102px #00ffaa,
+          0 0 151px #00ffaa;
 }
 
 
