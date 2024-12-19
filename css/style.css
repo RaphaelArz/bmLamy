@@ -8,9 +8,9 @@ h1 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1vw;
   font-family: "neon", sans-serif;
-  font-size: 19vw;
+  font-size: 22vw;
   color: #ffffff;
   text-shadow:
     0 0 7px #fff,
@@ -25,8 +25,8 @@ h1 {
 
 .txtDroit {
   color: white;
-  font-family: Amsterdam, sans-serif;
-  font-size: 5vw;
+  font-family: cormorand, sans-serif;
+  font-size: 5.5vw;
   text-shadow: 0 0 7px #0fa;
 }
 
@@ -39,6 +39,13 @@ h1 {
 }
 
 .txtItalic {
+    color: white;
+    font-family: Amsterdam, sans-serif;
+    font-size: 5.5vw;
+    text-shadow: 0 0 7px #0fa;
+  }
+
+.txtItalicGros {
   font-family: Amsterdam, sans-serif;
   font-weight: bold;
   font-style: italic;
@@ -55,7 +62,6 @@ h1 {
   text-align: center;
   background-repeat: no-repeat; /* Empêche l'image de se répéter */
   background-position: center; /* Centre l'image */
-  font-family: cormorand, sans-serif;
   font-size: 4.5vw;
   color: white;
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
@@ -82,7 +88,7 @@ h1 {
 }
 
 #gpName {
-  font-size: 4.9vw;
+  font-size: 4vw;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -102,10 +108,14 @@ h1 {
 
 #gpLeft {
   text-align: left;
+  font-family: Amsterdam ,sans-serif;
+
 }
 
 #gpRight {
   text-align: right;
+  font-family: Amsterdam ,sans-serif;
+
 }
 
 
