@@ -42,7 +42,7 @@ h1 {
   font-family: Amsterdam, sans-serif;
   font-weight: bold;
   font-style: italic;
-  font-size: 8vw;
+  font-size: 10vw;
   color: #ffffff;
   text-shadow: 0 0 7px #d014be;
 }
@@ -136,12 +136,12 @@ h1 {
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+    0 0 21px #d014be,
+    0 0 42px #d014be,
+    0 0 82px #d014be,
+    0 0 92px #d014be,
+    0 0 102px #d014be,
+    0 0 151px #d014be;
 }
 .chiffreDecompte{
   color: #ffffff;
@@ -153,12 +153,12 @@ h1 {
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+    0 0 21px #d014be,
+    0 0 42px #d014be,
+    0 0 82px #d014be,
+    0 0 92px #d014be,
+    0 0 102px #d014be,
+    0 0 151px #d014be;
 }
 
 
@@ -168,11 +168,11 @@ h1 {
       0 0 4px #fff,
       0 0 11px #fff,
       0 0 19px #fff,
-      0 0 40px #8a8dfe,
-      0 0 80px #8a8dfe,
-      0 0 90px #8a8dfe,
-      0 0 100px #8a8dfe,
-      0 0 150px #8a8dfe;
+      0 0 40px #d014be,
+      0 0 80px #d014be,
+      0 0 90px #d014be,
+      0 0 100px #d014be,
+      0 0 150px #d014be;
   }
 
   0% {
@@ -186,4 +186,32 @@ h1 {
       0 0 70px #0fa,
       0 0 80px #0fa;
   }
+}
+
+
+.btnLink {
+  font-size: 1rem;
+  font-family: 'DMSerif', sans-serif;
+  padding: 0.8rem;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  margin: 2.2rem;
+  border: 2px solid #d014be; /* Ajoute une bordure blanche de 2 pixels */
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
+  box-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 0 #d014be,
+    0 0 0px #d014be,
+    0 0 55px #d014be,
+    0 0 70px #d014be,
+    0 0 80px #d014be;
+}
+
+.btnLink:hover {
+
+  transform: scale(1.05); /* Légère mise à l'échelle pour un effet de grossissement */
 }
