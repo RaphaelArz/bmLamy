@@ -53,14 +53,31 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url("/img/neonRose.jpg");
-  background-size: cover; /* L'image couvre toute la surface de la zone */
   background-repeat: no-repeat; /* Empêche l'image de se répéter */
   background-position: center; /* Centre l'image */
   font-family: cormorand, sans-serif;
   font-size: 4.5vw;
   color: white;
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
+}
+#partie1 {
+  padding-top: 25vw;
+  padding-bottom: 25vw;
+  background-image: url("/img/neonRoseN.jpg");
+  background-size: cover; /* L'image couvre toute la surface de la zone */
+}
+#partie2{
+  background-image: url("/img/neonRoseH.jpg");
+  background-size: cover; /* L'image couvre toute la surface de la zone */
+
+  height: 120vw;
+
+}
+
+#photoAdam img{
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 0 2vw #d014be;
 }
 
 #gpName {
@@ -90,10 +107,7 @@ h1 {
   text-align: right;
 }
 
-#partie1 {
-  padding-top: 25vw;
-  padding-bottom: 25vw;
-}
+
 
 .pulsate {
   animation: pulsate 1.5s infinite alternate;
