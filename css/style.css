@@ -97,9 +97,7 @@ h1 {
 }
 
 #tephiline{
-  padding-top: 30vw;
-  padding-bottom: 25vw;
- /* background-image: url("/img/cielEtoile.jpg");
+  /* background-image: url("/img/cielEtoile.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
@@ -109,7 +107,7 @@ h1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 8vw;
+  gap: 9vw;
   margin-bottom: 1rem;
   color: #ffffff;
 }
@@ -233,10 +231,11 @@ h1 {
 
   transform: scale(1.05); /* Légère mise à l'échelle pour un effet de grossissement */
 }
-
+/* No-scroll class */
 .no-scroll {
   overflow: hidden;
 }
+
 /* Styles for the overlay */
 #overlay {
   background-image: url("/img/teteAdam.jpg");
@@ -247,35 +246,34 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fffaf4; /* Semi-transparent black background */
+  background-color: #fffaf4;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  opacity: 1; /* Initially visible */
-  transition: opacity 2s; /* Smooth transition for opacity change */
-  z-index: 2000; /* Assurez-vous que z-index est inférieur à celui de l'overlay */
+  opacity: 1;
+  transition: opacity 2s;
+  z-index: 2000;
   padding-bottom: 10vw;
 }
 
-#divOverlay{
+#divOverlay {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 #overlay.hidden {
-  opacity: 0; /* Make overlay invisible */
-  pointer-events: none; /* Disable pointer events on the hidden overlay */
+  opacity: 0;
+  pointer-events: none;
 }
 
-#invitationButton{
-}
-.overlaythird{
+.overlaythird {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
+
+
