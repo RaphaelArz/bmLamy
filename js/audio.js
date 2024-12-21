@@ -6,7 +6,7 @@ function playMusic() {
     // Augmente progressivement le volume
     var fadeInInterval = setInterval(function () {
         if (audio.volume < 1) {
-            audio.volume = Math.min(audio.volume + 0.005, 1); // Incrémente le volume
+            audio.volume = Math.min(audio.volume + 0.001, 1); // Incrémente le volume
         } else {
             clearInterval(fadeInInterval); // Arrête l'intervalle lorsque le volume atteint 1
         }
