@@ -82,3 +82,16 @@
   src:  url('/police/BRUSHSCI.TTF') format('truetype');
 }
 
+@font-face {
+  font-family: 'glitch';
+  font-style: normal;
+  font-weight: bold;
+  src:  url('/police/Doctor Glitch.otf') format('truetype');
+}
+@font-face {
+  font-family: 'vamp';
+  font-style: normal;
+  font-weight: bold;
+  src:  url('/police/Vampire Wars.ttf') format('truetype');
+}
+

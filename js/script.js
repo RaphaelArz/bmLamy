@@ -12,7 +12,7 @@ function startCountdown() {
   // Affiche le compte à rebours
   countdown.style.display = "block";
 
-  let timeLeft = 48;
+  let timeLeft = 3;
 
   const timer = setInterval(() => {
     timeLeft--;

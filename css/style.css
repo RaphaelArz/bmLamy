@@ -107,7 +107,7 @@ h1 {
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 9vw;
+  gap: 12vw;
   margin-bottom: 1rem;
   color: #ffffff;
 }
@@ -275,5 +275,104 @@ h1 {
   justify-content: flex-end;
   align-items: center;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 80%;
+
+
+
+}
+
+form label {
+  color: white;
+  font-family: cormorand, sans-serif;
+  font-size: 5.5vw;
+  text-shadow: 0 0 7px #0fa,
+  0 0 55px #0fa;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+form input[type="submit"] {
+  font-size: 1rem;
+  font-family: DMSerif, sans-serif;
+  padding: 0.8rem ;
+  color: #000000;
+  border-radius: 0.2rem;
+  margin: 2.2rem;
+  border: 2px solid #c0c0c0; /* Ajoute une bordure blanche de 2 pixels */
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+
+
+}
+
+form input[type="submit"]:hover {
+  background-color: #000000;
+  font-size: 1rem;
+  font-family: DMSerif, sans-serif;
+  padding: 0.8rem ;
+  color: #dab984;
+  border-radius: 0.2rem;
+  margin: 2.2rem;
+  border: 3px solid #dab984; /* Ajoute une bordure blanche de 2 pixels */
+  transition: background-position 1s ease-in-out, color 0.3s, border-color 0.3s; /* Transition douce pour les changements de couleur et l'animation */
+  background-position: left bottom;
+
+
+}
+
+form textarea {
+  resize: vertical;
+}
+
+.hidden{
+  display: none;
+}
+
+label{
+  text-align: center;
+}
+
+footer{
+  font-family: Membra, sans-serif;
+  text-decoration: none;
+
+}
+
 
 
