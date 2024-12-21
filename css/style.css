@@ -61,22 +61,23 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-repeat: no-repeat; /* Empêche l'image de se répéter */
+  /*background-image: url("/img/cielEtoilePaterne.jpg");*/
+  /*background-repeat: repeat; !* Empêche l'image de se répéter *!*/
   background-position: center; /* Centre l'image */
   font-size: 4.5vw;
   color: white;
-  box-shadow: 0 0 2px #00ffaa;
+  /*box-shadow: 0 0 2px #00ffaa;*/
   /* text-shadow : les effets de texte sont désactivés pour l'instant */
 }
 #partie1 {
   padding-top: 10vw;
   padding-bottom: 25vw;
-  background-image: url("/img/cielEtoile.jpg");
+  /*background-image: url("/img/cielEtoile.jpg");*/
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
 #partie2{
-  background-image:  url("/img/cielEtoile.jpg");
+  /*background-image:  url("/img/cielEtoile.jpg");*/
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
   height: 80vw;
@@ -98,7 +99,7 @@ h1 {
 #tephiline{
   padding-top: 30vw;
   padding-bottom: 25vw;
-  background-image: url("/img/cielEtoile.jpg");
+ /* background-image: url("/img/cielEtoile.jpg");
   background-size: cover; /* L'image couvre toute la surface de la zone */
 
 }
@@ -161,6 +162,11 @@ h1 {
 
 
 }
+
+#principale{
+  background-image: url("/img/cielEtoilePaterne.jpg");
+  }
+
 .texteDecompte{
   font-family: DMSerif, sans-serif;
   font-size: 1rem;
@@ -226,4 +232,51 @@ h1 {
 .btnLink:hover {
 
   transform: scale(1.05); /* Légère mise à l'échelle pour un effet de grossissement */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/* Styles for the overlay */
+#overlay {
+  background-image: url("/img/teteAdam.jpg");
+  background-size: cover;
+  background-position: top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fffaf4; /* Semi-transparent black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 1; /* Initially visible */
+  transition: opacity 0.5s; /* Smooth transition for opacity change */
+  z-index: 2000; /* Assurez-vous que z-index est inférieur à celui de l'overlay */
+  padding-bottom: 10vw;
+}
+
+#divOverlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#overlay.hidden {
+  opacity: 0; /* Make overlay invisible */
+  pointer-events: none; /* Disable pointer events on the hidden overlay */
+}
+
+#invitationButton{
+}
+.overlaythird{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10vw;
 }
