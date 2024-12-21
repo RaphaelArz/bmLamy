@@ -253,7 +253,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   opacity: 1; /* Initially visible */
-  transition: opacity 0.5s; /* Smooth transition for opacity change */
+  transition: opacity 2s; /* Smooth transition for opacity change */
   z-index: 2000; /* Assurez-vous que z-index est inférieur à celui de l'overlay */
   padding-bottom: 10vw;
 }
