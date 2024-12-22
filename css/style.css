@@ -374,5 +374,20 @@ footer{
 
 }
 
+footer {
+
+  text-align: center;
+background-image: url("/img/cielEtoile.jpg");
+
+  padding: 20px; /* Espacement intérieur pour un meilleur aspect */
+}
+span {
+  color: #ffffff; /* Couleur du texte */
+  font-size: 1.5rem; /* Taille du texte */
+  display: block; /* Pour que le texte apparaisse sur une ligne séparée */
+  margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+  font-family: Membra;
+}
+
 
 
