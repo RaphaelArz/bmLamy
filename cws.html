@@ -101,10 +101,10 @@
         <a class="txtDroitGras" style="font-size: 8vw">Vendredi 14 Février 2025</a>
         <a class="txtDroit">en la synagogue </a><br>
         <a class="txtItalicGros">Ohel Avraham</a><br>
-        <a class="txtDroit">14 Rue des Rouges Gorges,</a>
-        <a class="txtDroit"> Saint-Brice sous foret</a><br>
+        <a class="txtDroit">14 Rue des Rouges Gorges</a>
+        <a class="txtDroit">95350 Saint-Brice-sous-Forêt</a><br>
         <a class="txtDroitGras"> à 8h30 précise</a><br>
-        <a class="txtDroit">Un petit déjeuner suivra l'office</a>
+        <a class="txtDroit" >Un petit déjeuner suivra l'office</a>
         <br>
         <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
            class="btnLink">
@@ -117,15 +117,16 @@
     </div>
 
     <div class="partie">
-        <h1>Reception</h1>
-        <a class="txtItalic">Vanessa et Fred</a>
+        <h1 >Reception</h1>
+        <a class="txtItalic">Vanessa  et Fred</a>
         <a class="txtItalic">seraient heureux de vous recevoir le</a>
-        <a class="txtDroitGras">Dimanche 16 Février 2025</a>
+        <a class="txtDroitGras" >Dimanche 16 Février 2025</a>
         <a class="txtItalic">pour la récéption organisée en l'honneur de</a>
-        <h1>Adam</h1>
+        <h1 class="" style="font-family: glitch,sans-serif" >Adam</h1>
         <a class="txtItalic">en la salle La Palmeraie</a> <br>
-        <a class="txtDroit">20 Rue du Colonel Pierre Avia, 75015 Paris</a>
-        <a class="txtItalic">ambiance assurée !</a>
+        <a class="txtDroit">20 Rue du Colonel Pierre Avia</a>
+        <a class="txtDroit"> 75015 Paris</a>
+        <a class="txtItalic" >Ambiance assurée !</a>
         <a href="https://ul.waze.com/ul?preview_venue_id=1507816.14947091.6773443&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
            class="btnLink">
             <i class="fab fa-waze"> </i>
@@ -208,6 +209,23 @@
                 </div>
             </div>
 
+            <!-- Section Chabbat -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="chabbat" name="chabbat">
+                <label for="chabbat">Assisteront au Chabbat</label>
+            </div>
+            <div id="chabbatField" class="hidden">
+                <label>Nombre de personnes pour le Chabbat:</label>
+                <div class="form-group">
+                    <label for="adultsChabbat">Adultes:</label>
+                    <input type="number" id="adultsChabbat" name="adultsChabbat" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="childrenChabbat">Enfants:</label>
+                    <input type="number" id="childrenChabbat" name="childrenChabbat" min="0">
+                </div>
+            </div>
+
             <div class="form-group">
                 <label for="message">Message pour Adam:</label>
                 <textarea id="message" name="message" placeholder="Mazal tov Adam !" rows="4"></textarea>
@@ -216,6 +234,7 @@
                 <i class="fas fa-paper-plane"></i> Envoyer
             </button>
         </form>
+
 
     </div>
 
@@ -226,23 +245,27 @@
 <script defer src="/js/countDown.js"></script>
 <script defer src="/js/audio.js"></script>
 <script defer src="/js/coche.js"></script>
+<script defer src="/js/sheet.js"></script>
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         // Sélection des cases à cocher et des champs associés
         const nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
         const tephilinesCheckbox = document.getElementById('tephilines');
         const receptionCheckbox = document.getElementById('reception');
+        const chabbatCheckbox = document.getElementById('chabbat');
         const tephilinesField = document.getElementById('tephilinesField');
         const receptionField = document.getElementById('receptionField');
+        const chabbatField = document.getElementById('chabbatField');
 
-        const tephilinesInput = document.getElementById('nombrePersonnesTephilines');
-        const receptionInput = document.getElementById('nombrePersonnesReception');
+        const tephilinesInput = document.getElementById('adultsTephilines');
+        const receptionInput = document.getElementById('adultsReception');
+        const chabbatInput = document.getElementById('adultsChabbat');
 
         // Fonction pour décocher "Ne pourront pas assister" lorsque les autres cases sont cochées
         function uncheckNePourrontAssister() {
-            if (tephilinesCheckbox.checked || receptionCheckbox.checked) {
+            if (tephilinesCheckbox.checked || receptionCheckbox.checked || chabbatCheckbox.checked) {
                 nePourrontAssisterCheckbox.checked = false;
             }
         }
@@ -252,10 +275,13 @@
             if (nePourrontAssisterCheckbox.checked) {
                 tephilinesCheckbox.checked = false;
                 receptionCheckbox.checked = false;
-                tephilinesField.classList.add('hidden'); // Masquer le champ "Nombre de personnes"
-                receptionField.classList.add('hidden');   // Masquer le champ "Nombre de personnes"
-                tephilinesInput.removeAttribute('required'); // Rendre le champ non obligatoire
-                receptionInput.removeAttribute('required'); // Rendre le champ non obligatoire
+                chabbatCheckbox.checked = false;
+                tephilinesField.classList.add('hidden');
+                receptionField.classList.add('hidden');
+                chabbatField.classList.add('hidden');
+                tephilinesInput.removeAttribute('required');
+                receptionInput.removeAttribute('required');
+                chabbatInput.removeAttribute('required');
             }
         }
 
@@ -263,22 +289,27 @@
         function toggleField(checkbox, field, input) {
             if (checkbox.checked) {
                 field.classList.remove('hidden');
-                input.setAttribute('required', 'required'); // Rendre le champ obligatoire
+                input.setAttribute('required', 'required');
             } else {
                 field.classList.add('hidden');
-                input.removeAttribute('required'); // Rendre le champ non obligatoire
+                input.removeAttribute('required');
             }
         }
 
         // Écouteurs d'événements pour les changements de checkbox
-        tephilinesCheckbox.addEventListener('change', function () {
+        tephilinesCheckbox.addEventListener('change', function() {
             uncheckNePourrontAssister();
             toggleField(this, tephilinesField, tephilinesInput);
         });
 
-        receptionCheckbox.addEventListener('change', function () {
+        receptionCheckbox.addEventListener('change', function() {
             uncheckNePourrontAssister();
             toggleField(this, receptionField, receptionInput);
+        });
+
+        chabbatCheckbox.addEventListener('change', function() {
+            uncheckNePourrontAssister();
+            toggleField(this, chabbatField, chabbatInput);
         });
 
         nePourrontAssisterCheckbox.addEventListener('change', uncheckAllOthers);
