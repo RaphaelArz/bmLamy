@@ -8,8 +8,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     sendingMessage.style.top = '50%';
     sendingMessage.style.left = '50%';
     sendingMessage.style.transform = 'translate(-50%, -50%)';
-    sendingMessage.style.backgroundColor = '#000000';
-    sendingMessage.style.color = '#dab984';
+    sendingMessage.style.backgroundColor = '#0b26aa';
+    sendingMessage.style.color = '#ffffff';
     sendingMessage.style.padding = '20px';
     sendingMessage.style.borderRadius = '5px';
     sendingMessage.style.zIndex = '9999';
@@ -29,8 +29,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         body: new URLSearchParams(data)
     })
         .then(response => {
-                sendingMessage.textContent = 'Envoyé avec succès!';
-                sendingMessage.style.backgroundColor = '#000000'; // Vert pour succès
+                sendingMessage.textContent = 'Envoyé avec succès !';
+                sendingMessage.style.backgroundColor = '#0b26ab'; // Vert pour succès
 
             setTimeout(function() {
                 sendingMessage.remove(); // Supprimer le message après 5 secondes
