@@ -239,14 +239,15 @@ h1 {
 /* Styles for the overlay */
 #overlay {
   background-image: url("/img/teteAdam.jpg");
-  background-size: cover;
-  background-position: top;
+  background-size: 100% 100%; /* L'image s'étire pour remplir tout l'écran */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Empêcher la répétition de l'image */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fffaf4;
+  background-color: #fffaf4; /* Couleur de fond pour les zones vides */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -254,8 +255,10 @@ h1 {
   opacity: 1;
   transition: opacity 2s;
   z-index: 2000;
-  padding-bottom: 10vw;
+  padding-bottom: 10vw; /* Ajuster selon vos besoins */
 }
+
+
 
 #divOverlay {
   display: flex;
