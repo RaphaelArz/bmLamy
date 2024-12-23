@@ -37,7 +37,7 @@ h1 {
 .txtItalic {
     color: white;
     font-family: Amsterdam, sans-serif;
-    font-size: 6.5vw;
+    font-size: 7vw;
     text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa;
 
@@ -238,7 +238,7 @@ h1 {
 
 /* Styles for the overlay */
 #overlay {
-  background-image: url("/img/adamArgent.jpg");
+  background-image: url("/img/teteAdam.jpg");
   background-size: cover;
   background-position: top;
   position: fixed;
@@ -387,6 +387,16 @@ span {
   display: block; /* Pour que le texte apparaisse sur une ligne séparée */
   margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
   font-family: Membra;
+}
+
+.haesh{
+  width: 40%;
+  filter: drop-shadow(0 0 7px #00fda9); /* Décalage x, y, flou, couleur */
+
+
+  text-shadow: 0 0 7px #00fda9,
+  0 0 55px #0fa;
+
 }
 
 
