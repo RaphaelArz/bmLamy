@@ -44,6 +44,15 @@ h1 {
 
 
 }
+.txtItalicPetit {
+  color: white;
+  font-family: Amsterdam, sans-serif;
+  font-size: 7vw;
+  text-shadow: 0 0 7px #0fa,
+  0 0 55px #0fa;
+
+
+}
 
 .txtItalicGros {
   font-family: Amsterdam, sans-serif;
