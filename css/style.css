@@ -3,6 +3,7 @@ body {
   margin: 0;
 }
 
+
 h1 {
   align-items: center;
   justify-content: center;
@@ -19,7 +20,7 @@ h1 {
 .txtDroit {
   color: white;
   font-family: cormorand, sans-serif;
-  font-size: 5.5vw;
+  font-size: 6vw;
   text-shadow: 0 0 7px #0fa,
   0 0 55px #0fa;
 }
@@ -37,7 +38,7 @@ h1 {
 .txtItalic {
     color: white;
     font-family: Amsterdam, sans-serif;
-    font-size: 7vw;
+    font-size: 8vw;
     text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa;
 
@@ -138,7 +139,7 @@ h1 {
   display: flex;
   flex-direction: row;
   height: 20%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .elementDecompte{
   margin-right: 6vw;
@@ -238,7 +239,7 @@ h1 {
 
 /* Styles for the overlay */
 #overlay {
-  background-image: url("/img/teteAdam.jpg");
+  background-image: url("/img/Adam4.jpg");
   background-size: 100% 100%; /* L'image s'étire pour remplir tout l'écran */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Empêcher la répétition de l'image */
