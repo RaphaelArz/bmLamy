@@ -38,7 +38,7 @@ h1 {
 .txtItalic {
     color: white;
     font-family: Amsterdam, sans-serif;
-    font-size: 8vw;
+    font-size: 9vw;
     text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa;
 
@@ -239,7 +239,7 @@ h1 {
 
 /* Styles for the overlay */
 #overlay {
-  background-image: url("/img/Adam4.jpg");
+  background-image: url("/img/teteAdam.jpg");
   background-size: 100% 100%; /* L'image s'étire pour remplir tout l'écran */
   background-position: center; /* Centrer l'image */
   background-repeat: no-repeat; /* Empêcher la répétition de l'image */
