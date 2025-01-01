@@ -39,7 +39,7 @@ h1 {
 .txtItalic {
     color: white;
     font-family: "Great Vibes", sans-serif;
-    font-size: 8vw;
+    font-size: 9vw;
     text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa;
 
@@ -48,7 +48,7 @@ h1 {
 .txtItalicPetit {
   color: white;
   font-family: "Great Vibes", sans-serif;
-  font-size: 7.3vw;
+  font-size: 8.3vw;
   text-shadow: 0 0 7px #0fa,
   0 0 55px #0fa;
 
@@ -58,7 +58,7 @@ h1 {
 .txtItalicGros {
   font-family: "Great Vibes", sans-serif;
   font-style: italic;
-  font-size: 9.5vw;
+  font-size: 10.5vw;
   color: #ffffff;
   text-shadow: 0 0 7px #00fda9,
   0 0 55px #0fa;
