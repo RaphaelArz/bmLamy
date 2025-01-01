@@ -10,6 +10,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: 1vw;
+  margin-bottom: 4vw;
   font-family: "neon", sans-serif;
   font-size: 20vw;
   color: #ffffff;
@@ -31,14 +32,14 @@ h1 {
   font-weight: 1000;  /* ou 'bold' */
   text-shadow: 0 0 7px #0fa,
   0 0 55px #0fa;
-  font-size: 9vw;
+  font-size: 7.5vw;
   color: #ffffff;
 }
 
 .txtItalic {
     color: white;
-    font-family: Amsterdam, sans-serif;
-    font-size: 9vw;
+    font-family: "Great Vibes", sans-serif;
+    font-size: 8vw;
     text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa;
 
@@ -46,8 +47,8 @@ h1 {
 }
 .txtItalicPetit {
   color: white;
-  font-family: Amsterdam, sans-serif;
-  font-size: 7vw;
+  font-family: "Great Vibes", sans-serif;
+  font-size: 7.3vw;
   text-shadow: 0 0 7px #0fa,
   0 0 55px #0fa;
 
@@ -55,10 +56,9 @@ h1 {
 }
 
 .txtItalicGros {
-  font-family: Amsterdam, sans-serif;
-  font-weight: bold;
+  font-family: "Great Vibes", sans-serif;
   font-style: italic;
-  font-size: 10vw;
+  font-size: 9.5vw;
   color: #ffffff;
   text-shadow: 0 0 7px #00fda9,
   0 0 55px #0fa;

@@ -97,14 +97,15 @@
         <h1 style=" text-shadow: 0 0 7px #0fa,
     0 0 55px #0fa; ">Tefilines</h1><br>
 
-        <a class="txtDroit">La mise des téfilines aura lieu le </a> <br>
-        <a class="txtDroitGras" style="font-size: 8vw">Vendredi 14 Février 2025</a>
-        <a class="txtDroit">en la synagogue </a><br>
-        <a class="txtItalicGros">Ohel Avraham</a><br>
+        <a class="txtDroit" style="margin-bottom: 5vw">La mise des téfilines aura lieu le </a> <br>
+        <a class="txtDroitGras " style="margin-bottom: 5vw">Vendredi 14 Février 2025</a>
+        <a class="txtDroit" style="margin-bottom: 5vw">en la synagogue </a><br>
+        <a class="txtItalicGros" style="margin-bottom: 5vw">Ohel Avraham</a><br>
         <a class="txtDroit">14 Rue des Rouges Gorges</a>
         <a class="txtDroit">95350 Saint-Brice-sous-Forêt</a><br>
-        <a class="txtDroitGras"> à 8H30 précises</a><br>
-        <a class="txtItalicPetit" >Un petit déjeuner suivra l'office</a>
+        <a class="txtDroitGras" style="margin-bottom: 5vw"> à 8H30 précises</a><br>
+        <a class="txtItalicPetit" style="margin-bottom: 5vw">Un petit déjeuner suivra l'office</a>
+        <br>
         <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
            class="btnLink">
             <i class="fab fa-waze"> </i>
@@ -118,16 +119,16 @@
         <div class="partie">
             <h1>Chabbat</h1><br>
             <a class="txtItalic">Adam et sa Famille</a>
-            <a class="txtDroitGras">vous invitent au Chabbat</a>
-            <a class="txtItalicGros">Yitro</a>
-            <a class="txtItalicGros">Les 10 Commandements</a>
+            <a class="txtDroitGras" style="margin-bottom: 5vw">vous invitent au Chabbat</a>
+            <a class="txtItalicGros" style="margin-bottom: 5vw">Yitro</a>
+            <a class="txtItalicGros" style="margin-bottom: 5vw">Les 10 Commandements</a>
 
-            <a class="txtItalic">qui se deroulera du </a>
-            <a class="txtDroitGras">Vendredi 14 Février au samedi 15 Février </a><br>
+            <a class="txtItalic" >qui se deroulera du </a>
+            <a class="txtDroit" style="margin-bottom: 5vw; ">Vendredi 14 Février au samedi 15 Février </a><br>
             <a class="txtDroit">à l’hôtel Holiday Inn Paris CDG</a>
             <a class="txtDroit">61 rue Houdart</a>
-            <a class="txtDroit"> 95700 Roissy en France</a> <br>
-            <a class="txtDroit">à partir de  15H à l'hôtel</a>
+            <a class="txtDroit"style="margin-bottom: 5vw"> 95700 Roissy en France</a> <br>
+            <a class="txtItalicPetit">à partir de  15H à l'hôtel</a>
 
             <br>
 
@@ -140,14 +141,15 @@
         </div><br>
 
     <div class="partie">
-        <h1 >Reception</h1><br>
-        <a class="txtItalic">Vanessa  et Fred</a>
-        <a class="txtItalic">seraient heureux de vous recevoir le</a>
+        <h1>Reception</h1><br>
+        <a class="txtItalic">Vanessa et Fred</a>
+        <a class="txtItalic" style="margin-bottom: 3vw">seraient heureux de vous recevoir le</a>
         <a class="txtDroitGras" >Dimanche 16 Février 2025</a>
-        <a class="txtDroitGras">à partir de 19H</a>
-        <a class="txtItalicPetit">pour la récéption organisée en l'honneur de</a>
-        <h1 class="" style="font-family: glitch,sans-serif" >Adam</h1>
-        <a class="txtItalic">La  Palmeraie</a> <br>
+        <a class="txtDroit" style="margin-bottom: 3vw">à partir de 19H</a>
+
+        <a class="txtItalic" style="margin-bottom: 3vw">pour la récéption organisée en l'honneur de</a>
+        <h1 class="" style="font-family: glitch,sans-serif;margin-bottom: 3vw">Adam</h1>
+        <a class="txtItalicGros" style="margin-bottom: 3vw">La  Palmeraie</a> <br>
         <a class="txtDroit">20 Rue du Colonel Pierre Avia</a>
         <a class="txtDroit"> 75015 Paris</a>
         <a href="https://ul.waze.com/ul?preview_venue_id=1507816.14947091.6773443&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
@@ -197,15 +199,12 @@
                 <label for="reception">Assisteront à la réception</label>
             </div>
             <div id="receptionField" class="hidden">
-                <label>Nombre de personnes à la réception</label>
+
                 <div class="form-group">
-                    <label for="adultsReception">Adultes</label>
+                    <label for="adultsReception">Nombre de personnes à la réception</label>
                     <input type="number" id="adultsReception" name="adultsReception" min="0">
                 </div>
-                <div class="form-group">
-                    <label for="childrenReception">Enfants</label>
-                    <input type="number" id="childrenReception" name="childrenReception" min="0">
-                </div>
+
             </div>
 
             <!-- Section Chabbat -->
@@ -214,15 +213,12 @@
                 <label for="chabbat">Assisteront au Chabbat</label>
             </div>
             <div id="chabbatField" class="hidden">
-                <label>Nombre de personnes pour le Chabbat</label>
+
                 <div class="form-group">
-                    <label for="adultsChabbat">Adultes</label>
+                    <label for="adultsChabbat">Nombre de personnes au Chabbat</label>
                     <input type="number" id="adultsChabbat" name="adultsChabbat" min="0">
                 </div>
-                <div class="form-group">
-                    <label for="childrenChabbat">Enfants</label>
-                    <input type="number" id="childrenChabbat" name="childrenChabbat" min="0">
-                </div>
+
             </div>
             <div class="checkbox-group">
                 <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
