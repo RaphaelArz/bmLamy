@@ -14,8 +14,13 @@ h1 {
   font-family: "neon", sans-serif;
   font-size: 20vw;
   color: #ffffff;
-  text-shadow: 0 0 7px #0fa,
-  0 0 55px #0fa;
+  text-shadow:
+          0 0 10px #00fda9,   /* Ombre principale plus douce */
+          0 0 20px #00fda9,   /* Ombre secondaire plus étendue */
+          0 0 30px #00fda9,   /* Ombre encore plus grande */
+          0 0 40px #00fda9,   /* Ombre encore plus lumineuse */
+          0 0 75px #0fa;  /* Ombre étendue pour l'effet lumineux */
+
 }
 
 .txtDroit {
@@ -60,9 +65,14 @@ h1 {
   font-style: italic;
   font-size: 14.5vw;
   color: #ffffff;
-  text-shadow: 0 0 7px #00fda9,
-  0 0 55px #0fa,
-  0 0 65px #0fa;
+  text-shadow:
+          0 0 10px #00fda9,   /* Ombre principale plus douce */
+          0 0 20px #00fda9,   /* Ombre secondaire plus étendue */
+          0 0 30px #00fda9,   /* Ombre encore plus grande */
+          0 0 40px #00fda9,   /* Ombre encore plus lumineuse */
+          0 0 50px #0fa,      /* Ombre de couleur complémentaire pour l'effet néon */
+          0 0 75px #0fa,      /* Ombre étendue pour l'effet lumineux */
+          0 0 100px #0fa;     /* Ombre la plus large pour un effet très brillant */
 ;
 }
 
