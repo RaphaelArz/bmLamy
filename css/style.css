@@ -58,14 +58,16 @@ h1 {
 .txtItalicGros {
   font-family: "Great Vibes", sans-serif;
   font-style: italic;
-  font-size: 10.5vw;
+  font-size: 14.5vw;
   color: #ffffff;
   text-shadow: 0 0 7px #00fda9,
-  0 0 55px #0fa;
+  0 0 55px #0fa,
+  0 0 65px #0fa;
 ;
 }
 
 .partie {
+
   justify-content: center;
   align-items: center;
   display: flex;
