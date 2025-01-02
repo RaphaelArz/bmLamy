@@ -12,7 +12,7 @@ function startCountdown() {
   // Affiche le compte à rebours
   countdown.style.display = "block";
 
-  let timeLeft = 15;
+  let timeLeft = 16;
 
   const timer = setInterval(() => {
     timeLeft--;
