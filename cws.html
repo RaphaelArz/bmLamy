@@ -34,11 +34,10 @@
 <div id="overlay">
     <div id="divOverlay">
         <div class="overlaythird">
-            <a class="btnLink" id="invitationButton" onclick="startCountdown(); playMusic()">
+            <a class="btnLink" id="invitationButton" onclick="hideOverlay(); playMusic()">
                 <i class="fas fa-arrow-right"></i>
                 Voir l'invitation
             </a>
-            <div id="countdown" class="txtItalicGros" style="display: none;">16</div>
         </div>
     </div>
 </div>
@@ -63,54 +62,10 @@
 
 
 
-    <div class="partie" id="partie2">
-        <h1 style="font-size: 15.5vw;">Save The Date</h1>
+
+
+
         <br>
-        <div id="decompte">
-
-            <div class="elementDecompte">
-                <a id="jour" class="chiffreDecompte"> </a>
-                <a class="texteDecompte">Jours</a>
-
-            </div>
-            <div class="elementDecompte">
-                <a id="heure" class="chiffreDecompte"> </a>
-                <a class="texteDecompte">Heures</a>
-            </div>
-            <div class="elementDecompte">
-                <a id="minute" class="chiffreDecompte"> </a>
-                <a class="texteDecompte">Minutes</a>
-            </div>
-            <div class="elementDecompte2">
-                <a id="seconde" class="chiffreDecompte"> </a>
-                <a class="texteDecompte">Secondes</a>
-            </div>
-
-        </div>
-    </div>
-
-        <div class="partie">
-
-            <h1 >Tefilines</h1><br>
-
-            <a class="txtItalic" >La mise des téfilines aura lieu le </a> <br>
-            <a class="txtDroitGras " >Vendredi 14 Février 2025</a>
-            <a class="txtDroit" style="margin-bottom: 5vw">en la synagogue </a><br>
-            <a class="txtItalicGros" style="margin-bottom: 5vw">Ohel Avraham</a><br>
-            <a class="txtDroit">14 Rue des Rouges Gorges</a>
-            <a class="txtDroit">95350 Saint-Brice-sous-Forêt</a><br>
-            <a class="txtDroitGras"> à 8H30 précises</a><br>
-            <a class="txtItalicPetit" style="margin-bottom: 5vw">Un petit déjeuner suivra l'office</a>
-            <br>
-            <a href="https://www.waze.com/fr/live-map/directions/fr/idf/saint-brice-sous-foret/14-rue-des-rouges-gorges?navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location&to=place.ChIJd5IrmOxp5kcR8grq5KE7psk"
-               class="btnLink">
-                <i class="fab fa-waze"> </i>
-                Voir l'itinéraire
-
-            </a>
-
-
-        </div>
         <br>
 
         <div class="partie">
@@ -137,26 +92,7 @@
             </a>
         </div><br>
 
-        <div class="partie">
-            <h1>Reception</h1><br>
-            <a class="txtItalic">Vanessa et Fred</a>
-            <a class="txtItalic" style="margin-bottom: 3vw">seraient heureux de vous recevoir le</a><br>
-            <a class="txtDroitGras" >Dimanche 16 Février 2025</a>
-            <a class="txtDroit" style="margin-bottom: 3vw">à partir de 19H</a><br>
 
-            <a class="txtItalicPetit" >pour la récéption organisée</a>
-            <a class="txtItalicPetit" >en l'honneur de</a><br>
-
-            <h1 class="" style="font-family: glitch,sans-serif;margin-bottom: 3vw">Adam</h1>
-            <a class="txtItalicGros" style="margin-bottom: 3vw">La  Palmeraie</a> <br>
-            <a class="txtDroit">20 Rue du Colonel Pierre Avia</a>
-            <a class="txtDroit"> 75015 Paris</a>
-            <a href="https://ul.waze.com/ul?preview_venue_id=1507816.14947091.6773443&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-               class="btnLink">
-                <i class="fab fa-waze"> </i>
-                Voir l'itinéraire
-            </a>
-        </div><br>
 
 
 
@@ -174,21 +110,6 @@
                 <input type="text" id="prenom" name="prenom" required>
             </div>
 
-            <!-- Section réception -->
-            <div class="checkbox-group">
-                <input type="checkbox" id="reception" name="reception">
-                <label for="reception">Assisteront à la réception</label>
-            </div>
-            <div id="receptionField" class="hidden">
-                <div class="form-group">
-                    <label for="adultsReception">Nombre de personnes à la réception</label>
-                    <input type="number" id="adultsReception" name="adultsReception" min="0">
-                </div>
-            </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="ne-reception" name="ne-reception">
-                <label for="ne-reception">N'assisteront pas à la réception</label>
-            </div>
 
             <!-- Section Chabbat -->
             <div class="checkbox-group">
@@ -221,25 +142,22 @@
 </div>
 
 <audio id="myAudio" src="/musique/lamy4.mp3"></audio>
-<script defer src="/js/script.js"></script>
+<script defer src="/js/script2.js"></script>
 <script defer src="/js/countDown.js"></script>
 <script defer src="/js/audio.js"></script>
 <script defer src="/js/coche.js"></script>
-<script defer src="/js/sheet.js"></script>
+<script defer src="/js/sheet2.js"></script>
 
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Sélection des cases à cocher et des champs associés
-        const receptionCheckbox = document.getElementById("reception");
-        const neReceptionCheckbox = document.getElementById("ne-reception");
+
         const chabbatCheckbox = document.getElementById("chabbat");
         const neChabbatCheckbox = document.getElementById("ne-chabbat");
 
-        const receptionField = document.getElementById("receptionField");
         const chabbatField = document.getElementById("chabbatField");
 
-        const adultsReceptionInput = document.getElementById("adultsReception");
         const adultsChabbatInput = document.getElementById("adultsChabbat");
 
         // Fonction pour gérer la visibilité et les champs obligatoires
@@ -263,16 +181,7 @@
             }
         }
 
-        receptionCheckbox.addEventListener("change", function () {
-            handleConflict(this, neReceptionCheckbox, receptionField, [adultsReceptionInput]);
-        });
 
-        neReceptionCheckbox.addEventListener("change", function () {
-            if (this.checked) {
-                receptionCheckbox.checked = false;
-                toggleField(receptionCheckbox, receptionField, [adultsReceptionInput]);
-            }
-        });
 
         chabbatCheckbox.addEventListener("change", function () {
             handleConflict(this, neChabbatCheckbox, chabbatField, [adultsChabbatInput]);
